@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MAIN HEADER -->
+    <header class="main-header">
+        <div class="logo">
+            <img class="weblogo" src="./assets/logo.png" alt="logo">
+            Cryptous
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#company">Company</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+            <a href="#blog">Blog</a>
+        </nav>
+
+        <a href="#" class="trade-btn">Trade Now</a>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="text-content">
+            <h1>Make better business<br> with Cryptocurrency</h1>
+            <p>
+                We offer users a fully operational long-term rental platform.<br>
+                It plans to leverage blockchain technology.
+            </p>
+            <button class="white-btn">Get Whitelisted</button>
+        </div>
+
+        <div class="hero-img">
+            <img src="assets/illu.png" alt="Crypto Illustration" />
+        </div>
+    </section>
+
+    <!-- CRYPTO PRICE HERO -->
+    <section class="crypto-hero">
+        <div class="content">
+            <div class="mouse-icon">
+                <div class="wheel"></div>
+            </div>
+            <h1>Today's Cryptocurrency Prices</h1>
+        </div>
+
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section class="table-section">
+        <div class="container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>24h %</th>
+                        <th>7d %</th>
+                        <th>Market Cap</th>
+                        <th>Volume(24h)</th>
+                        <th>Last 7 Days</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" class="coin"> Bitcoin</td>
+                        <td>$55,206.61</td>
+                        <td class="up">▲ 0.92%</td>
+                        <td class="up">▲ 15.86%</td>
+                        <td>$1,046,899,935,348</td>
+                        <td>653,452 BTC</td>
+                        <td><img src="./assets/up1 - Copy (2).png" class="chart"></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" class="coin"> Ethereum</td>
+                        <td>$4,206.61</td>
+                        <td class="down">▼ 0.92%</td>
+                        <td class="up">▲ 15.86%</td>
+                        <td>$546,899,935,348</td>
+                        <td>353,452 ETH</td>
+                        <td><img src="./assets/up1 - Copy (3).png" class="chart"></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><img src="https://cryptologos.cc/logos/cardano-ada-logo.png" class="coin"> Cardano</td>
+                        <td>$2.61</td>
+                        <td class="down">▼ 0.92%</td>
+                        <td class="down">▼ 15.86%</td>
+                        <td>$146,899,935,348</td>
+                        <td>153,452 ADA</td>
+                        <td><img src="./assets/up2-removebg-preview - Copy.png" class="chart"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="crypto-features">
+        <h2>The most trusted cryptocurrency platform</h2>
+
+        <div class="features-container">
+
+            <!-- Feature 1 -->
+            <div class="feature-box">
+                <img src="./assets/Screenshot 2025-08-22 141423.png" alt="Trade Icon" class="feature-icon">
+
+                <h3>Ease of Trading</h3>
+                <p>Intuitive interface</p>
+                <p>Instant deposit options</p>
+                <p>Cash out directly to your bank account</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-box">
+                <img src="./assets/Screenshot 2025-08-22 141433.png" alt="Security Icon" class="feature-icon">
+
+                <h3>Institutional-grade Security</h3>
+                <p>98% of assets stored safely offline</p>
+                <p>Highly encrypted personal data</p>
+                <p>Whitelisting and transaction confirmations</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-box">
+                <img src="./assets/Screenshot 2025-08-22 141442.png" alt="Reliability Icon" class="feature-icon">
+
+                <h3>Proven Reliability</h3>
+                <p>Exchanging bitcoin since 2011</p>
+                <p>Industry-leading uptime</p>
+                <p>24/7 dedicated support</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="download-section">
+        <div class="download-content">
+
+            <div class="text-block">
+                <h2>Try the future, today.<br>Download Crypto</h2>
+
+                <p>
+                    Stay connected to the market with our mobile app. Featuring
+                    advanced order types and analytical tools for experienced traders,
+                    as well as a simple buy & sell interface for those just getting started.
+                </p>
+
+                <div class="store-buttons">
+                    <img src="./assets/app.png" alt="App Store">
+                    <img src="./assets/gplay.png" alt="Google Play">
+                </div>
+            </div>
+
+            <div class="image-block">
+                <img src="./assets/phone.png" class="phone phone-left" alt="Crypto App">
+            </div>
+
+        </div>
+    </section>
+
+    <main class="cards-section-container">
+        <h1>Learn to thrive</h1>
+        <section class="cards-section">
+
+            <article class="card">
+                <img src="./assets/1.png" alt="Crypto illustration" />
+                <div class="content">
+                    <h2 class="title">New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange</h2>
+                    <p class="description">We urge everyone adopt good cybersecurity habits, and to have unique
+                        passwords on every site they use…</p>
+                    <footer class="post-footer">
+                        <span>By: Jennia Peris</span>
+                        <span>15/07/2021 • 5 Min to read</span>
+                    </footer>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <img src="./assets/2.png" alt="Crypto chart" />
+                <div class="content">
+                    <h2 class="title">New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange</h2>
+                    <p class="description">We urge everyone adopt good cybersecurity habits, and to have unique
+                        passwords on every site they use…</p>
+                    <footer class="post-footer">
+                        <span>By: Jennia Peris</span>
+                        <span>15/07/2021 • 5 Min to read</span>
+                    </footer>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <img src="./assets/3.png" alt="Crypto coins" />
+                <div class="content">
+                    <h2 class="title">New Leveraged Pairs Added to Margin Trading on the Crypto.com Exchange</h2>
+                    <p class="description">We urge everyone adopt good cybersecurity habits, and to have unique
+                        passwords on every site they use…</p>
+                    <footer class="post-footer">
+                        <span>By: Jennia Peris</span>
+                        <span>15/07/2021 • 5 Min to read</span>
+                    </footer>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    <section class="subscribe-section">
+        <div class="content">
+            <h1>Never miss a drop</h1>
+            <p>Subscribe for the latest news, drops & collectibles</p>
+
+            <form class="subscribe-box">
+                <input type="email" placeholder="Enter your email address" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#">About us</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Disclaimer</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Businesses</h4>
+                <a href="#">Prime</a>
+                <a href="#">Custody</a>
+                <a href="#">Asset Hub</a>
+                <a href="#">Commerce</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Exchange</h4>
+                <a href="#">Exchange Home</a>
+                <a href="#">Margin Trading</a>
+                <a href="#">Derivatives Trading</a>
+                <a href="#">Trading Arena</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Blockchain</h4>
+                <a href="#">Chain Explorer</a>
+                <a href="#">The Syndicate</a>
+                <a href="#">Security</a>
+                <a href="#">Cryptous Credit</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <a href="#">Prices</a>
+                <a href="#">Site Widgets</a>
+                <a href="#">Tax</a>
+                <a href="#">Blog</a>
+                <a href="#">Research</a>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-bottom">
+            <p>Copyright 2025, Cryptous</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="icon">f</i></a>
+                <a href="#"><i class="icon">t</i></a>
+                <a href="#"><i class="icon">in</i></a>
+                <a href="#"><i class="icon">i</i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
