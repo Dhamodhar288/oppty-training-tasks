@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 90px 90px 90px 90px;
+  font-family: "Roboto", sans-serif;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.role {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+  margin-top: -15px;
+}
+
+.address {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  gap: 20px;
+}
+
+.detail {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+  list-style: none;
+}
+
+.Linkedin a {
+  text-decoration: none;
+  color: rgb(70, 67, 67);
+}
+
+.Git a {
+  text-decoration: none;
+  color: rgb(70, 67, 67);
+}
+
+.portfolio a {
+  text-decoration: none;
+  color: rgb(70, 67, 67);
+}
+hr {
+  margin-bottom: 20px;
+  border: 0.5px solid rgb(201, 198, 198);
+  width: 100%;
+}
+
+.summary {
+  margin-top: 25px;
+}
+
+.summaryTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: rgb(59, 58, 58);
+}
+
+.summary .summaryDescription {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+  text-align: left;
+  margin-top: -10px;
+}
+
+.education .qualifications {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+  text-align: left;
+  margin-top: -10px;
+}
+.education .instituteName {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+  text-align: left;
+  margin-top: 2px;
+}
+
+.education .yearOfPassing {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+  text-align: left;
+  margin-top: 2px;
+}
+
+.technicalSkills p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+  text-align: left;
+  margin-top: 2px;
+}
+
+.technicalSkills .frontend {
+  margin-top: -10px;
+}
+
+.projects .project1 a {
+  text-decoration: none;
+  color: rgb(70, 67, 67);
+}
+
+.projects .projectDetailsList li {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+  margin-top: 5px;
+}
+
+.projects .projectDetailsList {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.projects .project2 {
+  margin-top: 15px;
+}
+
+.projects .project1 svg {
+  vertical-align: middle;
+  height: 16px;
+  color: gray;
+}
+
+.certifications .certficationsList {
+  text-align: left;
+  margin-left: 50px;
+  margin-top: -5px;
+}
+.certifications .certficationsList li {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(70, 67, 67);
+  margin-top: 5px;
+}
+
+.certifications .certficationsLink {
+  margin-top: 10px;
+  color: rgb(70, 67, 67);
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 31px;
+}
+
+.certifications .certficationsLink a {
+  text-decoration: none;
+  color: rgb(70, 67, 67);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.certifications .certficationsLink svg {
+  vertical-align: middle;
+  height: 16px;
+  color: gray;
+}
