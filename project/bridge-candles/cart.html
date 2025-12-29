@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Bridge</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <nav class="nav-links" id="nav">
+        <a href="./index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#shop">Shop</a>
+        <a href="#blogs">Blog</a>
+      </nav>
+
+      <div class="logo">
+        <h1>BRIDGE</h1>
+        <p>HANDMADE CANDLES<br /><span>EST. 1970</span></p>
+      </div>
+
+      <div class="icons">
+        <span>♡ (0)</span>
+        <a href="cart.html" class="cart-btn">
+          👜 (<span id="cart-count">0</span>)
+        </a>
+      </div>
+
+      <div class="menu" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- CART EMPTY -->
+    <section class="cart-empty">
+      <div class="cart-content">
+        <h2 id="emptyText">YOUR CART IS CURRENTLY EMPTY.</h2>
+        <div id="cartItems"></div>
+      </div>
+
+      <button class="btn" onclick="location.href='index.html'">
+        RETURN TO SHOP
+      </button>
+    </section>
+
+    <script src="cart.js"></script>
+  </body>
+</html>

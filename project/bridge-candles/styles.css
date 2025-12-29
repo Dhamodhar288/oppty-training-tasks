@@ -100,9 +100,15 @@ html {
   margin-left: 15px;
   font-size: 16px;
     cursor: pointer;
-
 }
 
+.icons a {
+  margin-left: 15px;
+  font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
 /* Hero Section */
 .hero {
   position: relative;
@@ -1091,3 +1097,5 @@ html {
     text-align: center;
   }
 }
+
+
