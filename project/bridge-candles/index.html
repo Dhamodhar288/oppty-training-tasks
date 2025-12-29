@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bridge | Handmade Candles</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navbar">
+      <nav class="nav-links" id="nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#shop">Shop</a>
+        <a href="#blogs">Blog</a>
+      </nav>
+
+      <div class="logo">
+        <h1>BRIDGE</h1>
+        <p>HANDMADE CANDLES<br /><span>EST. 1970</span></p>
+      </div>
+
+      <div class="icons">
+        <span>♡ (0)</span>
+        <span>👜 (0)</span>
+      </div>
+
+      <div class="menu" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div
+        class="slide active"
+        style="background-image: url('./assets/flameImg5.jpg')"
+      ></div>
+      <div
+        class="slide"
+        style="background-image: url('./assets/lightcandle.jpg')"
+      ></div>
+      <div
+        class="slide"
+        style="background-image: url('./assets/scentcandle.jpg')"
+      ></div>
+
+      <div class="hero-content">
+        <h2 id="heroTitle">FLAME</h2>
+        <div class="buttons">
+          <button class="btn light">VIEW MORE</button>
+          <button class="btn dark">SHOP NOW</button>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="arrow left" onclick="prevSlide()">❮</button>
+      <button class="arrow right" onclick="nextSlide()">❯</button>
+    </section>
+
+    <section class="best-sellers" id="shop">
+      <p class="section-subtitle">CANDLES & DIFFUSERS</p>
+      <h2 class="section-title">WEEKLY BEST SELLERS</h2>
+
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="./assets/productsImgs/sandsoap.jpg" alt="Sand Soap" />
+          <h3>SAND SOAP</h3>
+          <p class="category">Fragrances, Incense, Packaging</p>
+          <span class="price">$20.00</span>
+          <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="./assets/productsImgs/woodcandle.jpg" alt="Wood Candle" />
+          <h3>WOOD CANDLE</h3>
+          <p class="category">Fragrances, Incense, Packaging</p>
+          <span class="price">$20.00</span>
+          <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="./assets/productsImgs/giftcandle.jpg" alt="Gift Candle" />
+          <h3>GIFT CANDLE</h3>
+          <p class="category">Fragrances, Incense, Packaging</p>
+          <span class="price">$20.00</span>
+          <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img
+            src="./assets/productsImgs/triplecandle.jpg"
+            alt="Triple Candle"
+          />
+          <h3>TRIPLE CANDLE</h3>
+          <p class="category">Fragrances, Incense, Packaging</p>
+          <span class="price">$20.00</span>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="split-section" id="blogs">
+      <div class="split-image">
+        <img src="./assets/splitimg4.png" alt="Natural Light" />
+      </div>
+
+      <div class="split-content light">
+        <h2>NATURAL LIGHT</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Eiusmod
+          tempor incididunt ut labore et dolore.
+        </p>
+        <button class="btn dark">READ MORE</button>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="split-section reverse">
+      <div class="split-content dark">
+        <h2>HANDMADE ITEMS</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Eiusmod
+          tempor incididunt ut labore et dolore.
+        </p>
+        <button class="btn light">READ MORE</button>
+      </div>
+
+      <div class="split-image">
+        <img src="./assets/splitimg3.png" alt="Handmade Items" />
+      </div>
+    </section>
+
+    <section class="favourites">
+      <div class="wrapper">
+        <!-- LEFT IMAGE COLLAGE -->
+        <div class="images">
+          <img
+            class="img-back"
+            src="./assets/favouratesimg4.png"
+            alt="Oil Bottle"
+          />
+
+          <img
+            class="img-front"
+            src="./assets/favouratesimg2.png"
+            alt="Flowers"
+          />
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="content">
+          <img class="product" src="./assets/favouratesimg3.png" alt="Candle" />
+
+          <h2>OUR FAVOURITES</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
+            quam vulputate.
+          </p>
+
+          <button class="shop-btn">SHOP NOW</button>
+        </div>
+      </div>
+    </section>
+
+    <header class="aroma-section">
+      <section class="aroma-text">
+        <h1>NATURAL AROMA</h1>
+        <p>
+          Ultrices dui sapien mi proin velit egestas duisefpal ruteus. Vel facil
+          siseros volutpat est.
+        </p>
+      </section>
+
+      <!-- <section class="aroma-image">
+      <img src="#" alt="Natural Aroma Candle">
+    </section> -->
+    </header>
+
+    <section class="modern-section">
+      <header class="section-header">
+        <span class="subtitle">CANDLES & DIFFUSERS</span>
+        <h2>FOR MODERN HOMES</h2>
+      </header>
+
+      <div class="card-grid">
+        <article class="product-card">
+          <div class="image-box">
+            <span class="date-badge">SEP<br />24</span>
+            <img
+              src="./assets/modernproductsimg1.png"
+              alt="Patchouli Diffuser"
+            />
+          </div>
+          <span class="category">CANDLES, HANDMADE</span>
+          <h3>PACHOULI DIFFUSER</h3>
+          <p>
+            Turpis cursus in hac habitasse platea dictumst quisque sagittis.
+          </p>
+        </article>
+
+        <article class="product-card">
+          <div class="image-box">
+            <span class="date-badge">SEP<br />26</span>
+            <img src="./assets/modernproductsimg2.png" alt="Handmade Soap" />
+          </div>
+          <span class="category">CANDLES, HANDMADE</span>
+          <h3>HANDMADE SOAP WORKSHOP</h3>
+          <p>
+            Turpis cursus in hac habitasse platea dictumst quisque sagittis.
+          </p>
+        </article>
+
+        <article class="product-card">
+          <div class="image-box">
+            <span class="date-badge">SEP<br />26</span>
+            <img src="./assets/modernproductsimg3.png" alt="Organic Oils" />
+          </div>
+          <span class="category">CANDLES, HANDMADE</span>
+          <h3>NEW ORGANIC OILS</h3>
+          <p>
+            Turpis cursus in hac habitasse platea dictumst quisque sagittis.
+          </p>
+        </article>
+
+        <article class="product-card">
+          <div class="image-box">
+            <span class="date-badge">SEP<br />26</span>
+            <img src="./assets/modernproductsimg4.png" alt="Perfect Scent" />
+          </div>
+          <span class="category">CANDLES, HANDMADE</span>
+          <h3>THE ART OF PERFECT SCENT</h3>
+          <p>
+            Turpis cursus in hac habitasse platea dictumst quisque sagittis.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-section">
+      <div class="feature-image">
+        <img src="./assets/featuresimg.png" alt="Nature Product" />
+      </div>
+
+      <div class="feature-content">
+        <div class="feature-item">
+          <span class="feature-icon">💳</span>
+          <div>
+            <h3>INSTANT PAYMENT</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-icon">🌱</span>
+          <div>
+            <h3>ENVIRONMENT SAFE</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section" id="services">
+      <!-- Left Content -->
+      <div class="testimonial-content">
+        <span class="quote-mark">“</span>
+
+        <span class="subtitle">YOU SAID ABOUT US</span>
+        <h2 id="testimonial-title">GREAT SERVICE</h2>
+
+        <p class="testimonial-text" id="testimonial-text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        </p>
+
+        <div class="author">
+          <img
+            id="author-img"
+            src="./assets/servicesprofile1.png"
+            alt="Terry Ortega"
+          />
+          <div>
+            <h4 id="author-name">TERRY ORTEGA</h4>
+            <span id="author-role">Interior Designer</span>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <span class="active" data-index="0">1</span>
+          <span data-index="1">2</span>
+          <span data-index="2">3</span>
+        </div>
+      </div>
+
+      <!-- Right Images -->
+      <div class="testimonial-images">
+        <img src="./assets/servicesimg1.png" class="img-large" alt="Candle" />
+        <img src="./assets/servicesimg2.png" class="img-small" alt="Plant" />
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery-track">
+        <img src="./assets/aromaimg2.png" alt="Aroma product" />
+        <img src="./assets/productsImgs/sandsoap.jpg" alt="Soap stack" />
+        <img src="./assets/flameImg3.jpg" alt="Candle in hand" />
+        <img src="./assets/flamecandleImg.jpg" alt="Diffuser" />
+        <img src="./assets/flameImg.jpg" alt="Minimal candles" />
+        <img src="./assets/lightcandle.jpg" alt="Soap bars" />
+      </div>
+    </section>
+
+    <footer class="site-footer" id="footer">
+      <!-- Top Footer -->
+      <div class="footer-main">
+        <div class="footer-col">
+          <h4>CONTACT</h4>
+          <p>Andhra Pradesh</p>
+          <p>T: +91 9876543210</p>
+          <p>bridge@qodeinteractive.com</p>
+          <p>IG _bridgecandleshop</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>SERVICES</h4>
+          <ul>
+            <li>Exclusive offers</li>
+            <li>Gifts</li>
+            <li>Store location</li>
+            <li>Corporate sales</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>ORDERS</h4>
+          <ul>
+            <li>My account</li>
+            <li>Delivery information</li>
+            <li>Track my order</li>
+            <li>Help</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>MOST POPULAR</h4>
+          <ul>
+            <li>Bergamot Collection</li>
+            <li>Hulie divine</li>
+            <li>La note de Paris</li>
+            <li>Pachouli Home</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy</a>
+        </div>
+
+        <div class="footer-copy">© 2025 Dhamodhar, All Rights Reserved</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
