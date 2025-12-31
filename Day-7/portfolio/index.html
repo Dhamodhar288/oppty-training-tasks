@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhamu | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="profile">
+        <img src="./assets/images/profileImg1.jpeg" alt="Dhamodhar Kamini" />
+        <h2>Dhamodhar Kamini</h2>
+
+        <div class="social-icons">
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-skype"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="#"><i class="fa fa-home"></i> Home</a>
+        <a href="#about"><i class="fa fa-user"></i> About</a>
+        <a href="#resume"><i class="fa fa-file"></i> Resume</a>
+        <a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
+        <a href="#services"><i class="fa fa-server"></i> Services</a>
+        <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown()">
+            <span><i class="fa fa-list"></i> Dropdown</span>
+            <i class="fa fa-chevron-down arrow"></i>
+          </button>
+
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#">Dropdown 1</a>
+            <a href="#">Dropdown 2</a>
+            <a href="#">Dropdown 3</a>
+          </div>
+        </div>
+
+        <a href="#"><i class="fa fa-envelope"></i> Contact</a>
+      </nav>
+    </aside>
+
+    <!-- Mobile Menu Button -->
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <!-- Hero Section -->
+    <main class="hero">
+      <div class="overlay">
+        <h1>Dhamodhar Kamini</h1>
+        <p>I'm <span id="changing-text"></span></p>
+      </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="section-desc">
+          Enthusiastic Frontend Developer skilled in HTML5, CSS3, Bootstrap,
+          JavaScript with hands-on experience building responsive websites and
+          simple web applications. Strong understanding of clean UI design,
+          mobile-friendly layouts, and basic interactive features using
+          JavaScript. Passionate about learning, improving, and creating
+          user-friendly digital experiences.
+        </p>
+
+        <div class="about-content">
+          <!-- Image -->
+          <div class="about-img">
+            <img src="./assets/images/profile2.jpg" alt="Profile" />
+          </div>
+
+          <!-- Info -->
+          <div class="about-info">
+            <h3>UI/UX Designer & Web Developer.</h3>
+            <p class="italic">
+              Enthusiastic Frontend Developer skilled in HTML5, CSS3, Bootstrap,
+              JavaScript with hands-on experience building responsive websites
+              and simple web applications. Strong understanding of clean UI
+              design, mobile-friendly layouts, and basic interactive features
+              using JavaScript. Passionate about learning, improving, and
+              creating user-friendly digital experiences.
+            </p>
+
+            <div class="info-grid">
+              <ul>
+                <li><span>›</span> <strong>Birthday:</strong> 8 July 2001</li>
+                <li>
+                  <span>›</span> <strong>Website:</strong> www.example.com
+                </li>
+                <li><span>›</span> <strong>Phone:</strong> +91 9876543210</li>
+                <li>
+                  <span>›</span> <strong>City:</strong> Andhra Pradesh, India
+                </li>
+              </ul>
+
+              <ul>
+                <li><span>›</span> <strong>Age:</strong> 24</li>
+                <li><span>›</span> <strong>Degree:</strong> Master</li>
+                <li>
+                  <span>›</span> <strong>Email:</strong> email@example.com
+                </li>
+                <li><span>›</span> <strong>Freelance:</strong> Available</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="stats-container">
+        <div class="stat-box">
+          <i class="fa-regular fa-face-smile"></i>
+          <h3>232</h3>
+          <h4>Happy Clients</h4>
+          <p>consequuntur quae</p>
+        </div>
+
+        <div class="stat-box">
+          <i class="fa-regular fa-file-lines"></i>
+          <h3>521</h3>
+          <h4>Projects</h4>
+          <p>adipisci atque cum quia aut</p>
+        </div>
+
+        <div class="stat-box">
+          <i class="fa-solid fa-headset"></i>
+          <h3>1453</h3>
+          <h4>Hours Of Support</h4>
+          <p>aut commodi quaerat</p>
+        </div>
+
+        <div class="stat-box">
+          <i class="fa-solid fa-users"></i>
+          <h3>32</h3>
+          <h4>Hard Workers</h4>
+          <p>rerum asperiores dolor</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-desc">
+          Full-Stack Web Developer skilled in React.js, Node.js, JavaScript, and
+          REST APIs, with hands-on experience building responsive and scalable
+          applications.
+        </p>
+
+        <div class="skills-grid">
+          <!-- Left -->
+          <div class="skill">
+            <div class="skill-head">
+              <span>HTML</span>
+              <span>100%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="100"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>JavaScript</span>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="75"></div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="skill">
+            <div class="skill-head">
+              <span>NodeJs</span>
+              <span>80%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>WordPress / CMS</span>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span>Photoshop</span>
+              <span>55%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" data-width="55"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <p class="section-desc">
+          Enthusiastic Frontend Developer skilled in HTML5, CSS3, Bootstrap,
+          JavaScript with hands-on experience building responsive websites and
+          simple web applications.
+        </p>
+
+        <div class="resume-grid">
+          <!-- LEFT -->
+          <div class="resume-column">
+            <h3 class="resume-heading">Summary</h3>
+
+            <div class="resume-item">
+              <span class="dot"></span>
+              <h4>Oppty Tech Hub</h4>
+              <p class="italic">
+                Innovative and deadline-driven Graphic Designer with 3+ years of
+                experience designing and developing user-centered digital/print
+                marketing material.
+              </p>
+              <ul>
+                <li>Telangana, Hyderabad</li>
+                <li>+91 9876543210</li>
+                <li>oppty@example.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-heading">Education</h3>
+
+            <div class="resume-item">
+              <span class="dot"></span>
+              <h4>Bachelors Degree, BTech</h4>
+              <h5>2020 - 2024</h5>
+              <p><em>A1 Global Institute of Science and engineering</em></p>
+              <p>Computer Science and Engineering.</p>
+            </div>
+
+            <div class="resume-item">
+              <span class="dot"></span>
+              <h4>Intermediate</h4>
+              <h5>2018 - 2020</h5>
+              <p><em>Sri Saikrupa Junior Collage</em></p>
+              <p>MPC.</p>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="resume-column">
+            <h3 class="resume-heading">Professional Experience</h3>
+
+            <div class="resume-item">
+              <span class="dot"></span>
+              <h4>Frontend Developer - Intern</h4>
+              <h5>2024 - 2024</h5>
+              <p><em>Technohub - Asers Technologies</em></p>
+              <ul>
+                <li>
+                  Lead in the design, development, and implementation of website
+                  designs.
+                </li>
+                <li>Delegate tasks to 7 members of the design team</li>
+                <li>Supervise assessment of all design figma materials</li>
+                <li>Oversee production project budgets</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <span class="dot"></span>
+              <h4>Python Full Stack Developer - Trainee</h4>
+              <h5>2022 - 2024</h5>
+              <p><em>NXTWave CCBP 4.0</em></p>
+              <ul>
+                <li>
+                  Completed intensive hands-on training covering frontend,
+                  backend, and API development.
+                </li>
+                <li>
+                  Built responsive applications using HTML, CSS, JavaScript, and
+                  React.js.
+                </li>
+                <li>
+                  Designed and implemented REST APIs to enable seamless
+                  frontend-backend communication.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects section -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <p class="description">
+        Full-Stack Web Developer skilled in React.js, Node.js, JavaScript, and
+        REST APIs, with hands-on experience building responsive and scalable
+        applications.
+      </p>
+
+      <!-- Filter Buttons -->
+      <div class="filters">
+        <button class="active" data-filter="all">ALL</button>
+        <button data-filter="app">APP</button>
+        <button data-filter="product">PRODUCT</button>
+        <button data-filter="branding">BRANDING</button>
+        <button data-filter="books">BOOKS</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <div class="item app">
+          <img src="./assets/images/project1.png" alt="project" />
+        </div>
+        <div class="item product">
+          <img src="./assets/images/project2.png" alt="project" />
+        </div>
+        <div class="item branding">
+          <img src="./assets/images/project3.png" alt="project" />
+        </div>
+        <div class="item books">
+          <img src="./assets/images/project4.png" alt="project" />
+        </div>
+        <div class="item app">
+          <img src="./assets/images/project5.png" alt="project" />
+        </div>
+        <div class="item product">
+          <img src="./assets/images/project6.png" alt="project" />
+        </div>
+        <div class="item branding">
+          <img src="./assets/images/project7.png" alt="project" />
+        </div>
+        <div class="item books">
+          <img src="./assets/images/project8.png" alt="project" />
+        </div>
+        <div class="item app">
+          <img src="./assets/images/project9.png" alt="project" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="services-container">
+        <h2 class="section-title">Services</h2>
+        <p class="section-desc">Here Are Some of My Skills</p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon">🎨</div>
+            <h3>Graphic Design</h3>
+            <p>
+              UI Design,<br />
+              Website & Digital Design, <br />
+              Brading & Visual Identity, <br />
+              Print Design
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">💻</div>
+            <h3>Front End Development</h3>
+            <p>HTML / CSS /BOOTSTRAP JS & ReactJS WordPress</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🖥️</div>
+            <h3>Back End Development</h3>
+            <p>NodeJS ExpressJS SQL & Python</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🏢</div>
+            <h3>Web Marketing</h3>
+            <p>Sales Marketing Invoice eCommerce</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">✏️</div>
+            <h3>Illustration</h3>
+            <p>Editorial Narrative Motion Graphics Animation Visual Effects</p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">W</div>
+            <h3>Wordpress</h3>
+            <p>
+              UI Design Website & Digital Design Brading & Visual Identity Print
+              Design
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+
+    <section class="testimonials">
+      <div class="testimonials-container">
+        <h2 class="section-title">Testimonials</h2>
+        <p class="desc">Clients Says</p>
+
+        <div class="testimonial-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="quote-box">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                "Dhamodhar handled everything professionally-from design to
+                development. He turned our ideas into a fully functional website
+                that looks great on all devices. His communication and support
+                throughout the project were outstanding."
+              </p>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="author">
+              <img src="./assets/images/client1.png" alt="client1" />
+              <h4>Arjun</h4>
+              <span>Freelancer</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="quote-box">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                "Working with Dhamodhar was an amazing experience. He understood
+                our requirements clearly and delivered a clean, modern website
+                that our customers love. The performance and design quality
+                exceeded our expectations. Highly recommended!"
+              </p>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="author">
+              <img src="./assets/images/client2.png" alt="client2" />
+              <h4>Surya</h4>
+              <span>Entrepreneur</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="quote-box">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                "Working with Dhamodhar was an amazing experience. He understood
+                our requirements clearly and delivered a clean, modern website
+                that our customers love. The performance and design quality
+                exceeded our expectations. Highly recommended!"
+              </p>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="author">
+              <img src="./assets/images/client3.png" alt="client3" />
+              <h4>Jackson</h4>
+              <span>CEO & Founder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2 class="section-title">Contact</h2>
+        <p class="desc">
+          Become Part of the Journey Get behind-the-scenes updates, exclusive
+          content, and early access to my new work.a
+        </p>
+
+        <div class="contact-wrapper">
+          <!-- LEFT -->
+          <div class="contact-info">
+            <div class="info-box">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Address</h4>
+                <p>Andhra Pradesh, India</p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Call Us</h4>
+                <p>+91 9876543210</p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email Us</h4>
+                <p>info@example.com</p>
+              </div>
+            </div>
+
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps?q=New%20York&output=embed"
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <form class="contact-form" id="contactForm">
+            <div class="row">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+            </div>
+
+            <input type="text" placeholder="Subject" required />
+            <textarea rows="6" placeholder="Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer id="footer">
+      <div style="margin-left: 50px">
+        <p>© Copyright Dhamodhar Portfolio. All Rights Reserved</p>
+        <span>Designed by Dhamodhar Associate Software Engineer</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
