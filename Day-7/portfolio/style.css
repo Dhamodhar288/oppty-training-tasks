@@ -22,7 +22,7 @@ html {
   position: fixed;
   height: 100vh;
   transition: 0.3s;
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 .profile {
@@ -82,8 +82,8 @@ html {
   width: calc(100% - 280px);
   height: 100vh;
   background-image: url("./assets/images/profileImg1.jpeg");
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 
@@ -114,12 +114,16 @@ html {
 }
 
 @keyframes blink {
-  0% { border-color: transparent; }
-  50% { border-color: #00e5ff; }
-  100% { border-color: transparent; }
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00e5ff;
+  }
+  100% {
+    border-color: transparent;
+  }
 }
-
-
 
 /* Mobile */
 .menu-btn {
@@ -184,7 +188,6 @@ html {
   transform: rotate(180deg);
 }
 
-
 @media (max-width: 768px) {
   .sidebar {
     left: -280px;
@@ -210,10 +213,9 @@ html {
   }
 }
 
-
 /* About Section */
 .about {
-     margin-left: 280px;
+  margin-left: 280px;
   width: calc(100% - 280px);
   height: 100vh;
   padding: 60px 20px;
@@ -242,8 +244,8 @@ html {
 }
 
 .section-desc {
-    font-size: 16px;
-    font-weight:600;    
+  font-size: 16px;
+  font-weight: 600;
   margin-bottom: 40px;
   color: #555;
 }
@@ -265,15 +267,15 @@ html {
   margin-top: 50px;
 }
 .about-info h3 {
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 .italic {
   font-style: italic;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 500;
   font-size: 15px;
   color: #666;
@@ -291,8 +293,8 @@ html {
 }
 
 .info-grid li {
-    font-size: 15px;
-    font-weight: 500;
+  font-size: 15px;
+  font-weight: 500;
   margin-bottom: 10px;
   color: #333;
 }
@@ -309,11 +311,10 @@ html {
 
 /* Responsive */
 @media (max-width: 768px) {
-
-    .about {
+  .about {
     margin-left: 0;
-        width: 100%;
-    }
+    width: 100%;
+  }
   .about-content {
     flex-direction: column;
   }
@@ -331,12 +332,12 @@ html {
 
 /* Stats Section */
 .stats {
-   margin-left: 280px;
+  margin-left: 280px;
   width: calc(100% - 280px);
   height: 60vh;
   padding: 60px 20px;
   background: #fff;
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
 .stats-container {
@@ -377,10 +378,10 @@ html {
 
 /* Tablet */
 @media (max-width: 992px) {
-    .stats {
+  .stats {
     margin-left: 0;
-        width: 100%;
-    }
+    width: 100%;
+  }
   .stats-container {
     margin-top: 150px;
     display: grid;
@@ -391,20 +392,17 @@ html {
 /* Mobile */
 @media (max-width: 576px) {
   .stats-container {
-
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-
-
 /* Skills Section */
 .skills {
-    margin-left: 280px;
+  margin-left: 280px;
   width: calc(100% - 280px);
   height: 80vh;
   padding: 60px 20px;
-    background: #e1eff3;
+  background: #e1eff3;
 }
 
 .container {
@@ -465,20 +463,19 @@ html {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .skills {
+  .skills {
     margin-left: 0;
-        width: 100%;
-    }
+    width: 100%;
+  }
   .skills-grid {
     grid-template-columns: 1fr;
   }
 }
 
-
 /* resume Section */
 
 .resume {
-    margin-left: 280px;
+  margin-left: 280px;
   width: calc(100% - 280px);
   height: 80vh;
   padding: 60px 20px;
@@ -567,10 +564,10 @@ html {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .resume {
+  .resume {
     margin-left: 0;
-        width: 100%;
-    }
+    width: 100%;
+  }
   .resume-grid {
     grid-template-columns: 1fr;
   }
@@ -578,40 +575,36 @@ html {
   .resume-column {
     margin-bottom: 40px;
   }
-
 }
-
 
 /* Portfolio Section */
 .portfolio {
-    margin-top: 290px;
-    margin-left: 280px;
+  margin-top: 290px;
+  margin-left: 280px;
   width: calc(100% - 280px);
   padding: 60px 20px;
   height: auto;
 }
 
-
-
 .portfolio h2 {
-    text-align: left;
+  text-align: left;
   font-size: 32px;
   margin-bottom: 10px;
 }
 
 .description {
-    text-align: left;
-    font-weight: 600;
-    margin-bottom: 30px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 30px;
   color: #555;
   max-width: 700px;
 }
 
 /* Filters */
 .filters {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 
@@ -655,32 +648,31 @@ html {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .portfolio {
+  .portfolio {
     margin-left: 0;
-        width: 100%;
-        margin-top: 200px;
-    }
+    width: 100%;
+    margin-top: 200px;
+  }
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-    .portfolio {
+  .portfolio {
     margin-left: 0;
-        width: 100%;
-        margin-top: 150px;
-    }
+    width: 100%;
+    margin-top: 150px;
+  }
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
 }
 
-
 /* Services Section */
 .services-container {
-    height: 80vh;
-    margin-left: 280px;
+  height: 80vh;
+  margin-left: 280px;
   width: calc(100% - 280px);
   padding: 60px 20px;
 }
@@ -752,24 +744,24 @@ html {
 
 /*  Responsive */
 @media (max-width: 768px) {
-    .services {
+  .services {
     margin-left: 0;
-        width: 100%;
-        align-items: center;
-    }
+    width: 100%;
+    align-items: center;
+  }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-    .services {
+  .services {
     margin-left: 0;
-        width: 100%;
-        align-items: center;
-    }
+    width: 100%;
+    align-items: center;
+  }
   .services-grid {
-     grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .service-card {
@@ -778,13 +770,11 @@ html {
   }
 }
 
-
-
 /* Testimonials Section */
 .testimonials {
-    margin-left: 280px;
-    width: calc(100% - 280px);
-    height: auto;
+  margin-left: 280px;
+  width: calc(100% - 280px);
+  height: auto;
   padding: 70px 20px;
 }
 
@@ -794,17 +784,16 @@ html {
 }
 
 h2 {
-    text-align: left;
+  text-align: left;
   font-size: 32px;
   font-weight: 700;
 }
 
-
 .desc {
-    font-size: 20px;
-    text-align: left;
-    font-weight: 600;
-    margin-bottom: 30px;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 30px;
   max-width: 700px;
   margin-top: 10px;
   color: #555;
@@ -827,7 +816,7 @@ h2 {
   background: #fff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   position: relative;
 }
 
@@ -857,7 +846,7 @@ h2 {
 /* Author */
 .author {
   margin-top: 35px;
-    text-align: center;
+  text-align: center;
 }
 
 .author img {
@@ -891,13 +880,12 @@ h2 {
   }
 }
 
-
 /* Contact Section */
 .contact-container {
-    margin-left: 280px;
-    width: calc(100% - 280px);
-    height: auto;
-    padding: 70px 20px;
+  margin-left: 280px;
+  width: calc(100% - 280px);
+  height: auto;
+  padding: 70px 20px;
 }
 
 h2 {
@@ -931,7 +919,7 @@ h2 {
   background: #fff;
   padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .info-box {
@@ -969,7 +957,7 @@ h2 {
   background: #fff;
   padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .contact-form input,
@@ -1002,7 +990,7 @@ h2 {
 
 /* Footer */
 footer {
-    margin-left: 200px;
+  margin-left: 200px;
   text-align: center;
   padding: 25px;
   background: #eef6fb;
