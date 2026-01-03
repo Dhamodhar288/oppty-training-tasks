@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>My HTML Portfolio</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section id="features" class="container">
+        <div class="content">
+          <h2>About HTML</h2>
+          <hr />
+          <p>
+            HTML stands for HyperText Markup Language. It is the standard
+            language used to create web pages.
+          </p>
+
+          <h2>Key Features of HTML</h2>
+          <hr />
+          <ul class="featuresList">
+            <li>Easy to learn</li>
+            <li>Semantic structure</li>
+            <li>Multimedia support</li>
+            <li>Forms and tables</li>
+          </ul>
+        </div>
+
+        <figure class="image-box">
+          <img src="./assets/laptopimg" alt="Laptop and coffee" />
+          <figcaption class="caption">Laptop and coffee</figcaption>
+        </figure>
+      </section>
+
+      <!-- Topics & Table -->
+      <section class="container">
+        <div class="content">
+          <h2>HTML Topics Covered</h2>
+          <hr />
+          <ol>
+            <li>Headings & Sections</li>
+            <li>Lists and Tables</li>
+            <li>Forms and Inputs</li>
+            <li>Media Embeds</li>
+          </ol>
+        </div>
+
+        <div class="table-box">
+          <h3>Project Timeline</h3>
+          <table>
+            <tr>
+              <th>Phase</th>
+              <th>Tasks</th>
+              <th>Duration</th>
+            </tr>
+            <tr>
+              <td>Planning</td>
+              <td>Research & Outline</td>
+              <td>1 Week</td>
+            </tr>
+            <tr>
+              <td>Development</td>
+              <td>Coding Content</td>
+              <td>2 Weeks</td>
+            </tr>
+            <tr>
+              <td>Review</td>
+              <td>Testing & Fixes</td>
+              <td>3 Days</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- Resources -->
+      <section class="resources">
+        <h2>Resources</h2>
+        <hr />
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+            >
+              MDN Web Docs
+            </a>
+            – Comprehensive HTML reference
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/html/" target="_blank">
+              W3Schools
+            </a>
+            – Learn HTML basics
+          </li>
+        </ul>
+      </section>
+
+      <!-- Demo Video -->
+      <section id="demo" class="video-section">
+        <h2>Demo Video</h2>
+        <hr />
+        <iframe
+          src="https://www.youtube.com/embed/UB1O30fR-EE"
+          loading="lazy"
+          allowfullscreen
+        >
+        </iframe>
+        <p class="caption">Lazy-loaded demo via iframe</p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <hr />
+
+        <form id="contactForm">
+          <!-- Personal Details -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message"></textarea>
+          </fieldset>
+
+          <!-- Newsletter -->
+          <fieldset class="newsletter">
+            <legend>Newsletter Subscription</legend>
+
+            <p>Subscribe to newsletter?</p>
+            <label> <input type="checkbox" value="yes" /> Yes </label>
+            <label> <input type="checkbox" value="no" /> No </label>
+          </fieldset>
+
+          <!-- Preferred Contact -->
+          <fieldset>
+            <legend>Preferred Contact Method</legend>
+
+            <label>
+              <input type="radio" name="contactMethod" value="Email" /> Email
+            </label>
+            <label>
+              <input type="radio" name="contactMethod" value="Phone" /> Phone
+            </label>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      © 2024 My HTML Portfolio |
+      <a href="mailto:contact@example.com">contact@example.com</a> | Location:
+      Anytown, USA
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
