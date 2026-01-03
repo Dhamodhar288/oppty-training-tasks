@@ -10,6 +10,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   text-align: center;
   padding: 20px;
@@ -26,17 +27,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Layout */
 .container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   gap: 30px;
   padding: 30px;
+  align-items: flex-start;
   flex-wrap: wrap;
-}
-
-#features .contact .featuresList {
-  margin-left: 20px;
 }
 
 .content,
@@ -45,38 +42,59 @@ nav a:hover {
   flex: 1;
 }
 
+/* Lists */
+.featuresList {
+  margin-left: 20px;
+}
+
+/* Image */
+.image-box {
+  text-align: center;
+}
+
 .image-box img {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   border-radius: 8px;
+  margin: auto;
 }
 
 .caption {
-  text-align: center;
   font-style: italic;
   margin-top: 8px;
 }
 
+/* HR */
+hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #fff;
 }
 
 th {
   background-color: #0066cc;
   color: white;
+  padding: 10px;
 }
 
 td {
+  padding: 10px;
   background-color: #f9f9f9;
+  border: 1px solid #ccc;
 }
 
-/* Alternate row color */
 tr:nth-child(even) td {
   background-color: #f1f1f1;
 }
 
+/* Sections */
 .resources,
 .video-section,
 .contact {
@@ -87,10 +105,6 @@ tr:nth-child(even) td {
   margin-left: 20px;
 }
 
-.resources a {
-  color: #0066cc;
-}
-
 iframe {
   width: 100%;
   max-width: 720px;
@@ -99,58 +113,10 @@ iframe {
   margin: auto;
 }
 
+/* Form */
 form {
   max-width: 500px;
   margin: auto;
-}
-
-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-.newsletter {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-fieldset label {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-right: 15px;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-button {
-  background: #0066cc;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #004c99;
 }
 
 fieldset {
@@ -165,6 +131,47 @@ legend {
   padding: 0 10px;
 }
 
+/* Inputs */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Checkbox & Radio */
+fieldset input[type="checkbox"],
+fieldset input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+fieldset label.inline {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+/* Button */
+button {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004c99;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 15px;
