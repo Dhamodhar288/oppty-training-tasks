@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+h4 {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: blue;
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.form-wrapper {
+  padding: 20px 0;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 480px;
+  margin-left: 60%;
+  padding: 20px;
+  background: #fafafa;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+}
+
+.form-group {
+  display: flex;
+  margin-top: 12px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Inline checkbox / radio groups */
+.form-inline {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.inline-title {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+form button {
+  margin-top: 16px;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inline {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.inline-title {
+  font-weight: bold;
+  min-width: 120px; /* ensures label aligned */
+}
+
+.center {
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 260px;
+  border: 1px solid #ccc;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+.note {
+  background: #fff3cd;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  min-width: 90px;
+}
+
+.btn.primary {
+  background-color: #4b75c6;
+  border: 1px solid #355fa8;
+  color: #fff;
+}
+
+.btn.outline {
+  background-color: #eaeaea;
+  border: 1px solid #999;
+  color: #000;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#timer {
+  font-weight: bold;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+iframe {
+  width: 100%;
+  height: 230px;
+  border: 1px solid #999;
+  background: #fff;
+}
+small {
+  color: red;
+  margin-top: 2px;
+}
+.success {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.inline label {
+  font-weight: normal;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .form-box {
+    max-width: 100%;
+    margin: 0;
+  }
+  .inline-title {
+    min-width: auto;
+  }
+}

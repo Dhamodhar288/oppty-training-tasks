@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Web Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Web Project</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Dynamic</a>
+        <a href="#">Timer</a>
+        <a href="#">Contact Form</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main class="grid">
+      <!-- ABOUT -->
+      <section class="box">
+        <h2>About This Project</h2>
+        <p>
+          This is a sample interactive web page built using HTML and JavaScript.
+          It features dynamic content manipulation, form validation, and local
+          storage.
+        </p>
+
+        <h4>Features Demonstrated:</h4>
+        <ul>
+          <li>DOM manipulation</li>
+          <li>Form validation</li>
+          <li>Event handling</li>
+          <li>Dynamic content updates</li>
+          <li>Local storage</li>
+        </ul>
+      </section>
+
+      <!-- MAP -->
+      <section class="box center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61828.20763813694!2d77.69220980672684!3d14.411998111709586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1436576c5408d%3A0x4f8776a22373a987!2sDharmavaram%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1767605157636!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <button class="btn outline" onclick="toggleMap(this)">
+          Toggle Map
+        </button>
+      </section>
+
+      <hr class="full" />
+
+      <!-- TODO -->
+      <section class="box">
+        <h2>Interactive To-Do List</h2>
+
+        <div class="todo-input">
+          <input type="text" id="taskInput" placeholder="New Task..." />
+          <button class="btn primary" onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <p class="note">Tasks are saved in your browser's local storage.</p>
+        <button class="btn outline" onclick="clearTasks()">
+          Clear All Tasks
+        </button>
+      </section>
+
+      <!-- TIMER 1 -->
+      <section class="box center">
+        <h2>Auto-Updating Timer</h2>
+        <p>This counter auto-updates every second:</p>
+        <h3 id="timer1">Time elapsed: 00:00:00</h3>
+
+        <div class="btn-group">
+          <button class="btn primary" onclick="toggleTimer()">Pause</button>
+          <button class="btn primary" onclick="resetTimer()">Reset</button>
+        </div>
+      </section>
+
+      <hr class="full" />
+
+      <!-- CONTACT -->
+      <section class="box form-wrapper">
+        <div class="box form-box">
+          <h2>Contact Form</h2>
+
+          <form onsubmit="return validateForm()">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" />
+              <small id="nameErr"></small>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" />
+              <small id="emailErr"></small>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" />
+              <small id="passErr"></small>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" rows="3"></textarea>
+            </div>
+
+            <!-- Subscribe -->
+            <div class="form-group form-inline">
+              <input type="checkbox" id="subscribe" />
+              <label for="subscribe">Subscribe to newsletter</label>
+            </div>
+
+            <!-- Yes / No -->
+            <div class="form-group form-inline">
+              <span class="inline-title">Do you agree?</span>
+              <input type="radio" id="agreeYes" name="agree" />
+              <label for="agreeYes">Yes</label>
+              <input type="radio" id="agreeNo" name="agree" />
+              <label for="agreeNo">No</label>
+            </div>
+
+            <!-- Preferred Contact -->
+            <div class="form-group form-inline">
+              <span class="inline-title">Preferred Contact:</span>
+              <input type="radio" id="prefEmail" name="pref" />
+              <label for="prefEmail">Email</label>
+              <input type="radio" id="prefPhone" name="pref" />
+              <label for="prefPhone">Phone</label>
+            </div>
+
+            <button class="btn outline" type="submit">Clear Data</button>
+            <p class="success" id="successMsg"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      © 2024 Interactive Web Project | Your email:
+      <a href="#">user@example.com</a> | <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
