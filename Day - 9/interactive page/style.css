@@ -88,7 +88,6 @@ textarea {
   width: 100%;
 }
 
-/* Inline checkbox / radio groups */
 .form-inline {
   display: flex;
   gap: 8px;
@@ -118,7 +117,7 @@ form button {
 }
 .inline-title {
   font-weight: bold;
-  min-width: 120px; /* ensures label aligned */
+  min-width: 120px;
 }
 
 .center {

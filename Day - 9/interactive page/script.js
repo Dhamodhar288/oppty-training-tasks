@@ -114,5 +114,5 @@ function validateForm() {
     successMsg.textContent = "Form validated successfully!";
   }
 
-  return false; // prevent page reload
+  return false; 
 }
