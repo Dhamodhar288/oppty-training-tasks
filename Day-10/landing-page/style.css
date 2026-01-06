@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* Header */
+header {
+  height: 55px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+header h1 {
+  font-family: cursive;
+  font-size: 24px;
+}
+
+.icons svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+/* Layout container */
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+aside {
+  width: 240px;
+  min-width: 240px;
+  border-right: 1px solid #ccc;
+  padding: 15px;
+}
+
+main {
+  flex: 1;
+  padding: 25px 30px;
+}
+
+aside img {
+  width: 100%;
+}
+
+nav a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+nav .active {
+  background: #86e6e6;
+}
+
+.quote {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Content */
+main {
+  padding: 25px;
+  flex: 1;
+}
+
+main h2 {
+  margin-bottom: 8px;
+}
+
+main p {
+  margin-bottom: 18px;
+}
+
+hr {
+  margin: 15px 0;
+}
+
+/* Skill Table */
+.skills {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.skills th,
+.skills td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.skills th {
+  color: white;
+}
+
+.skills .head {
+  background: #86e6e6;
+}
+
+.skills svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Form */
+form {
+  width: 260px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 5px 12px;
+}
+
+/* Footer */
+footer {
+  background: #2f3552;
+  color: #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    min-width: unset;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+  form {
+    width: 100%;
+  }
+}
